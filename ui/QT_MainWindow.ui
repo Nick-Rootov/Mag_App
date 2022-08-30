@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>796</width>
+    <height>755</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MagApp</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" colspan="2">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Дорожно-транспортная инфраструктура</string>
+       </attribute>
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="geometry">
+         <rect>
+          <x>-1</x>
+          <y>140</y>
+          <width>771</width>
+          <height>551</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QWidget" name="verticalLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>331</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="DtpLabel1">
+           <property name="text">
+            <string>Поиск ДТП</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QLabel" name="DtpLabel2">
+             <property name="text">
+              <string> Выберите год:</string>
+             </property>
+             <property name="margin">
+              <number>5</number>
+             </property>
+             <property name="indent">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="DtpYearComboBox">
+             <item>
+              <property name="text">
+               <string>2021</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <property name="bottomMargin">
+            <number>6</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="DtpLabel3">
+             <property name="text">
+              <string> Выберите месяц:</string>
+             </property>
+             <property name="margin">
+              <number>5</number>
+             </property>
+             <property name="indent">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="DtpMonthComboBox">
+             <item>
+              <property name="text">
+               <string>январь</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>февраль</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>март</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>апрель</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>май</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>июнь</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>июль</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>август</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>сентябрь</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>октябрь</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>ноябрь</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>декабрь</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="DtpSearchButton">
+           <property name="text">
+            <string>Найти</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="verticalLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>0</y>
+          <width>331</width>
+          <height>129</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="WeatherLabel1">
+           <property name="text">
+            <string>Поиск информации о погоде</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QLabel" name="WeatherLabel2">
+             <property name="text">
+              <string>Выберите год:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="WatherYearComboBox">
+             <item>
+              <property name="text">
+               <string>2015</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2016</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2017</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2018</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2019</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2020</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2021</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2022</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QLabel" name="WeatherLabel3">
+             <property name="text">
+              <string>Выберите месяц:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="WeatherMonthComboBox">
+             <property name="currentText">
+              <string>январь</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>январь</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>февраль</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>март</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>апрель</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>май</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>июнь</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>июль</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>август</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>сентябрь</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>октябрь</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>ноябрь</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>декабрь</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="WeatherSearchButton">
+           <property name="text">
+            <string>Найти</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="LoadDataButton">
+           <property name="text">
+            <string>Загрузить последние данные в таблицу</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Инженерные сети теплоснабжения</string>
+       </attribute>
+       <widget class="QWidget" name="widget1" native="true">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>771</width>
+          <height>301</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QWidget" name="widget2" native="true">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>410</y>
+          <width>771</width>
+          <height>301</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="CrashButton">
+        <property name="geometry">
+         <rect>
+          <x>680</x>
+          <y>30</y>
+          <width>75</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Crash</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>341</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Котельная 1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Котельная 2</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>40</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Выбор измерения:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>380</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Выбор измерения:</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_2">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>40</y>
+          <width>161</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>оксид углерода (CO)</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="comboBox_3">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>380</y>
+          <width>161</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>метан (CH4)</string>
+         </property>
+        </item>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Сети газоснабжения</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>Сети электроснабжения</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>Сети водоснабжения</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

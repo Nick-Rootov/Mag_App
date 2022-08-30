@@ -1,0 +1,1 @@
+pyuic5 C:\Users\igore\PycharmProjects\mag_app\ui\QT_MainWindow.ui -o C:\Users\igore\PycharmProjects\mag_app\MainWindow.py
